@@ -1,0 +1,41 @@
+.hero {
+  background-color: #f4f7fb5f;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  &__block {
+    display: flex;
+    gap: 50px;
+
+    &-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 30px;
+  }
+
+  &__subtitle {
+    margin: 0;
+    margin-bottom: 80px;
+  }
+
+  &__btns {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+
+  &__info {
+    display: flex;
+    gap: 80px;
+
+    &--subtitle {
+      font-weight: 600;
+    }
+  }
+}

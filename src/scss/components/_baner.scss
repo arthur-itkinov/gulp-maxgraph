@@ -1,0 +1,20 @@
+.baner {
+  background-color: var(--blue-color);
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 30px;
+    font-size: 40px;
+    color: var(--light-color);
+  }
+
+  &__text {
+    color: var(--light-color);
+  }
+}

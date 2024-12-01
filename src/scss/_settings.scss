@@ -81,6 +81,15 @@ a {
   max-width: var(--container-width);
 }
 
+.container-fluid {
+  margin: 0 auto;
+  padding: 0 var(--container-offset);
+  max-width: var(--container-fluid-width);
+  @include mobile {
+    padding: 0 15px;
+  }
+}
+
 .centered {
   text-align: center;
 }

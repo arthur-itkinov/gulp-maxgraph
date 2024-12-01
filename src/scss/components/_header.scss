@@ -1,1 +1,37 @@
-// ваш код
+.header {
+  padding: 22px 0;
+  width: 100%;
+  z-index: 10000;
+
+  &__container {
+    @include flex-all-sb;
+
+    @include tablet {
+      justify-content: initial;
+    }
+  }
+
+  &__phone {
+    @include tablet {
+      position: relative;
+      margin-right: 10px;
+      margin-left: auto;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 10px;
+      width: 44px;
+      height: 44px;
+      font-size: 0;
+      background-image: url("../img/phone (2).svg");
+      background-position: center;
+      // background-size: 24px 24px;
+      background-repeat: no-repeat;
+    }
+  }
+  &--fixed {
+    position: fixed;
+    background-color: #1d1a1b;
+    left: 0;
+    top: 0;
+    z-index: 10000;
+  }
+}

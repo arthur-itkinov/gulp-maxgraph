@@ -6,11 +6,14 @@
 
 // подключения компонентов страницы
 @import "./components/header";
-
-// тестовые стили, удалите их
-.page__body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: var(--vh);
-}
+@import "./components/nav";
+@import "./components/burger";
+@import "./components/btn";
+@import "./components/section";
+@import "./components/hero";
+@import "./components/about";
+@import "./components/prof";
+@import "./components/foryou";
+@import "./components/baner";
+@import "./components/tarif";
+@import "./components/order";

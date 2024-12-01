@@ -1,0 +1,49 @@
+.tarif {
+  background-color: #f6f9ff;
+
+  &__title {
+    margin: 0;
+    margin-bottom: 45px;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+
+  &__item {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 27px 0px rgba(34, 60, 80, 0.2);
+    display: flex;
+    flex-direction: column;
+
+    &--title {
+      text-align: center;
+      margin: 0;
+      margin-bottom: 30px;
+    }
+
+    &--list {
+      padding-bottom: 20px;
+      margin-bottom: auto;
+    }
+  }
+
+  &__block-pay {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__price {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    color: var(--blue-color);
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,97 @@
+.order {
+  padding-top: 116px;
+  padding-bottom: 84px;
+
+  @include mobile {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  &__title {
+    margin: 0;
+    max-width: 716px;
+    color: var(--dark-color);
+    font-family: Forum;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    @include small-tablet {
+      font-size: 35px;
+    }
+    @include mobile {
+      & > span {
+        color: var(--blue-color);
+      }
+    }
+    &--blue {
+      margin-bottom: 51px;
+    }
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    @include high-tablet {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 30px;
+    }
+  }
+  &__descr {
+    color: #383c3e;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 22.4px */
+    letter-spacing: 0.5px;
+    &-modal {
+      text-decoration-line: underline;
+      &:hover {
+        color: var(--blue-color);
+      }
+    }
+  }
+  &__logo {
+    @include high-tablet {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  &__label {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 8px;
+    border-bottom: 2px solid #737b7d;
+    width: 100%;
+    margin-bottom: 8px;
+    &:last-child {
+      margin-bottom: 21px;
+    }
+  }
+  .just-validate-error-label {
+    padding-left: 20px;
+  }
+  &__input {
+    padding: 12px 20px;
+    width: 100%;
+    height: 60px;
+    color: var(--dark-color);
+    &::placeholder {
+      color: var(--dark-color);
+    }
+  }
+  &__telegram-name {
+    display: none;
+  }
+  @include high-tablet {
+    align-items: center;
+  }
+}

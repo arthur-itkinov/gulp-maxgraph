@@ -1,0 +1,22 @@
+.prof {
+  background-color: #f4f7fb5f;
+  border-bottom: 5px solid rgb(229, 229, 239);
+
+  &__block {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+
+  &__title,
+  &__text {
+    margin: 0;
+  }
+
+  &__text:not(:last-child) {
+    margin-bottom: 25px;
+  }
+  &__text:last-child {
+    margin-bottom: 45px;
+  }
+}
